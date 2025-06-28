@@ -1,67 +1,66 @@
 import React from 'react';
-import Marquee from 'react-fast-marquee';
+import { motion } from 'framer-motion';
+import {
+    FaHtml5,
+    FaCss3Alt,
+    FaReact,
+    FaNodeJs,
+    FaDatabase,
+    FaFireAlt,
+} from 'react-icons/fa';
+import { SiTailwindcss, SiExpress, SiMongodb } from 'react-icons/si';
+import { TbBrandJavascript } from 'react-icons/tb';
 
 const skills = [
-    {
-        name: "HTML",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
-    {
-        name: "CSS",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    },
-    {
-        name: "Tailwind CSS",
-        image: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-    },
-    {
-        name: "JavaScript",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-        name: "React Router",
-        image: "https://i.ibb.co/7xzFV2r8/download.png",
-    },
-    {
-        name: "Node.js",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-        name: "Express.js",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    },
-    {
-        name: "MongoDB",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    },
-    {
-        name: "Firebase",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-    },
+    { name: 'HTML5', icon: <FaHtml5 className="text-orange-500 text-5xl" /> },
+    { name: 'CSS / Tailwind', icon: <SiTailwindcss className="text-sky-400 text-5xl" /> },
+    { name: 'JavaScript', icon: <TbBrandJavascript className="text-yellow-400 text-5xl" /> },
+    { name: 'React Router', icon: <FaReact className="text-cyan-400 text-5xl" /> },
+    { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-5xl" /> },
+    { name: 'Express.js', icon: <SiExpress className="text-white text-5xl" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="text-green-500 text-5xl" /> },
+    { name: 'Firebase', icon: <FaFireAlt className="text-yellow-500 text-5xl" /> },
 ];
 
-const SkillMarquee = () => {
-    return (
-        <div className="py-10 px-4">
-            <h2 className="text-3xl font-bold text-center text-lime-400 mb-8">🚀 Technologies I Use</h2>
+const cardVariants = {
+    offscreen: { opacity: 0, y: 30 },
+    onscreen: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: 'spring',
+            bounce: 0.3,
+            duration: 0.6,
+        },
+    },
+};
 
-            <Marquee gradient={false} speed={70} pauseOnHover={true}>
-                {skills.map((skill, idx) => (
-                    <div
-                        key={idx}
-                        className="bg-lime-500 hover:bg-amber-500 rounded-xl shadow-md p-5 text-center mx-4 w-40 flex flex-col items-center transition-transform hover:-translate-y-1 duration-300"
-                    >
-                        <img
-                            src={skill.image}
-                            alt={skill.name}
-                            className="w-14 h-14 mb-3 object-contain"
-                        />
-                        <p className="text-white text-sm font-semibold">{skill.name}</p>
-                    </div>
-                ))}
-            </Marquee>
-        </div>
+const Skills = () => {
+    return (
+        <section className="py-16 px-4">
+            <div className="max-w-6xl mx-auto">
+                <h2 className="text-3xl font-bold text-center text-white mb-10">
+                    🚀 <span className="text-lime-400">My Skills</span>
+                </h2>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    {skills.map((skill, index) => (
+                        <motion.div
+                            key={index}
+                            className="bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-center gap-3 hover:shadow-xl transition"
+                            initial="offscreen"
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.4 }}
+                            variants={cardVariants}
+                        >
+                            <div>{skill.icon}</div>
+                            <p className="text-base font-semibold text-white text-center">{skill.name}</p>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 };
 
-export default SkillMarquee;
+export default Skills;

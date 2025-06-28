@@ -1,14 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import logo from '../assets/logo.png'
+import { FaGooglePlus, FaHome, FaProjectDiagram, FaRProject, FaUserAlt } from 'react-icons/fa';
+import { GiSkills } from 'react-icons/gi';
+import { MdContactEmergency } from 'react-icons/md';
 
 const Nabver = () => {
     const navItems = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><navLink to="/aboutUs">AboutUs</navLink></li>
-        <li><navLink to="/contact">Contact</navLink></li>
-        <li><navLink to="/skill">Skill</navLink></li>
-        <li><navLink to="/project">Project</navLink></li>
+        <li><NavLink to="/"><FaHome />Home</NavLink></li>
+        <li><navLink to="/aboutUs"><FaGooglePlus />AboutUs</navLink></li>
+        <li><navLink to="/contact"><MdContactEmergency />Contact</navLink></li>
+        <li><navLink to="/skill"><FaRProject />Skill</navLink></li>
+        <li><navLink to="/protfolio"><FaUserAlt />Protfolio</navLink></li>
     </>
     return (
         <div className="navbar bg-blue-200 rounded-2xl shadow-sm mt-6">

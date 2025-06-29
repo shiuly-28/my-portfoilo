@@ -1,19 +1,20 @@
 import React from 'react';
 import logo from '../assets/logo.png'
-import { FaGooglePlus, FaHome, FaProjectDiagram, FaRProject, FaUserAlt } from 'react-icons/fa';
+import { FaDownload, FaGooglePlus, FaHome, FaProjectDiagram, FaRProject, FaUserAlt } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { MdContactEmergency } from 'react-icons/md';
+
 
 const Nabver = () => {
     const navItems = <>
         
-        <li><navLink to="/aboutUs"><FaGooglePlus />AboutUs</navLink></li>
-        <li><navLink to="/contact"><MdContactEmergency />Contact</navLink></li>
-        <li><navLink to="/skill"><FaRProject />Skill</navLink></li>
-        <li><navLink to="/protfolio"><FaUserAlt />Protfolio</navLink></li>
+        <li><a to="/home"><FaHome />Home</a></li>
+        <li><a to="/contact"><MdContactEmergency />Contact</a></li>
+        <li><a to="/skill"><FaRProject />Skill</a></li>
+        <li><a to="/project"><FaUserAlt />Project</a></li>
     </>
     return (
-        <div className="navbar rounded-2xl mt-6 text-white">
+        <div className="navbar rounded-2xl mt-4 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +34,7 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn btn-primary"><FaDownload />Download Resume </a>
             </div>
       </div>
     );

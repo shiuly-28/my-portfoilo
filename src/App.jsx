@@ -6,6 +6,7 @@ import Education from "./Pages/Education";
 import Background from "./Pages/Background";
 import Footer from "./Pages/Footer";
 import ProjectCard from "./assets/ProjectCard";
+import Contact from "./Pages/Contact";
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Skills></Skills>
         <Education></Education>
         <ProjectCard></ProjectCard>
+        <Contact></Contact>
         <Footer></Footer>
         
       </div>

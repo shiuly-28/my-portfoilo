@@ -19,12 +19,12 @@ export default function AnimatedBackground() {
     useEffect(() => {
         const interval = setInterval(() => {
             setBits(generateBits());
-        }, 15000); // Refresh animation every 15 sec
+        }, 15000); 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden bg-gray-900">
+        <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden bg-gray-700">
             {bits.map((bit) => (
                 <motion.div
                     key={bit.id}
@@ -32,7 +32,7 @@ export default function AnimatedBackground() {
                     animate={{
                         opacity: [0, 1, 0],
                         y: [0, -100],
-                        x: bit.x, // ✅ use value directly, no string
+                        x: bit.x, 
                     }}
                     transition={{
                         duration: bit.duration,
@@ -41,11 +41,11 @@ export default function AnimatedBackground() {
                     }}
                     className="absolute rounded-full blur-sm"
                     style={{
-                        width: `${bit.size}px`,           // ✅ wrapped in backticks
+                        width: `${bit.size}px`,           
                         height: `${bit.size}px`,
                         left: `${bit.x}%`,
                         top: `${bit.y}%`,
-                        backgroundColor: "rgba(0, 213, 255, 0.2)", // React blue glow
+                        backgroundColor: "rgba(0, 213, 255, 0.2)",
                     }}
                 />
             ))}

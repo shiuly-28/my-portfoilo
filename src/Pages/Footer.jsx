@@ -1,14 +1,25 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-
+// import logo1 from '../assets/'
 const Footer = () => {
     return (
         
         <footer className="bg-gray-900 text-white py-8">
 
-            <div className="w-full h-[2px] bg-gray-700"></div>
+            <div className="w-full h-[2px] bg-gray-700">
+                {/* <div className="flex flex-col items-center justify-center gap-2 mb-4 sm:flex-row">
+                    <img
+                        src={logo}
+                        alt="Sheauly Logo"
+                        className="h-16 w-auto rounded-md shadow-md"
+                    />
+                    <h2 className="text-2xl font-semibold">Sheauly Akhter</h2>
+                </div> */}
+            </div>
 
             <div className="max-w-4xl mx-auto text-center px-4 mt-6">
+
+
                 {/* Name */}
                 <h2 className="text-2xl font-semibold mb-2">Sheauly Akhter</h2>
 
@@ -30,7 +41,7 @@ const Footer = () => {
                     >
                         <FaFacebook size={26} />
                     </a>
-                    
+                    <a
                         href="https://www.linkedin.com/in/sheauly"
                         target="_blank"
                         rel="noopener noreferrer"

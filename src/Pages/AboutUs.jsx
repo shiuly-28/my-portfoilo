@@ -4,14 +4,14 @@ const AboutUs = () => {
     return (
         <section
             id="about"
-            className="min-h-screen flex items-center justify-center  px-4 py-16"
+            className="min-h-screen flex items-center justify-center p-10 px-10 py-16"
         >
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="max-w-4xl mx-auto text-center glass p-10 rounded-2xl shadow-lg"
+                className="max-w-4xl mx-auto text-center  glass p-30 rounded-2xl shadow-lg"
             >
                 <h2 className="text-4xl font-bold text-primary mb-6">About Me</h2>
                 <p className="text-base-content text-lg leading-relaxed">

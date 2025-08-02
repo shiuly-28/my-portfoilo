@@ -2,11 +2,18 @@ import React from 'react';
 import image from '../assets/sheauly.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaDownload, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import resume from '../assets/Sheauly.pdf'
 
 const Banner = () => {
+    const navigate = useNavigate();
+
+    const handleHireClick = () => {
+        navigate('/contact');
+    };
     return (
-        <div className="py-12 px-4">
+        <div className="py-12 px-4 ">
             <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-10 max-w-6xl mx-auto">
                 {/* Image Section */}
                 <motion.div
@@ -18,7 +25,7 @@ const Banner = () => {
                     <img
                         src={image}
                         alt="Sheauly Akhter"
-                        className="w-60 sm:w-80 md:w-96 lg:w-[400px] rounded-full border-4 border-white shadow-xl object-cover"
+                        className="w-60 sm:w-80 md:w-96 lg:w-[400px] rounded-full border-4 border-white shadow-xl object-cover  transform hover:scale-[1.03] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_12px_3px_lime] transition duration-300"
                     />
                 </motion.div>
 
@@ -29,7 +36,7 @@ const Banner = () => {
                     </h1>
 
                     <div className="mt-3">
-                        <h1 className="font-bold text-2xl text-purple-400">
+                        <h1 className="font-bold text-2xl text-lime-500">
                             <Typewriter
                                 words={["I'M A MERN Stack Developer"]}
                                 loop={false}
@@ -69,11 +76,12 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href="/resume.pdf" download>
-                                <button className="btn btn-secondary shadow-md hover:shadow-xl transition-all duration-300">
-                                    Hire Me
-                                </button>
-                            </a>
+                            <button
+                                onClick={handleHireClick}
+                                className="btn btn-secondary shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300"
+                            >
+                                Hire Me
+                            </button>
                         </motion.div>
 
                         <motion.div
@@ -83,10 +91,8 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href="/resume.pdf" download>
-                                <button className="btn btn-secondary shadow-md hover:shadow-xl transition-all duration-300">
-                                    Download
-                                </button>
+                            <a href={resume} download className="btn btn-secondary shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300">Download
+
                             </a>
                         </motion.div>
                     </div>

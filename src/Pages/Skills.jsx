@@ -37,7 +37,7 @@ const cardVariants = {
 
 const Skills = () => {
     return (
-        <section className="py-16 px-4">
+        <section id="skills" className="py-16 px-4 bg-gray-900 text-white">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-center text-white mb-10">
                     🚀 <span className="text-lime-400">My Skills</span>
@@ -47,14 +47,18 @@ const Skills = () => {
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}
-                            className="bg-gray-800 p-6 rounded-xl shadow-md flex flex-col items-center gap-3 hover:shadow-xl transition"
+                            className={`
+                                bg-slate-800 text-gray-200 p-6 rounded-xl flex flex-col items-center gap-3
+                                cursor-pointer
+                               hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300
+                            `}
                             initial="offscreen"
                             whileInView="onscreen"
                             viewport={{ once: true, amount: 0.4 }}
                             variants={cardVariants}
                         >
                             <div>{skill.icon}</div>
-                            <p className="text-base font-semibold text-white text-center">{skill.name}</p>
+                            <p className="text-base font-semibold text-center">{skill.name}</p>
                         </motion.div>
                     ))}
                 </div>

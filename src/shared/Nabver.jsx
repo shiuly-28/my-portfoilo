@@ -3,11 +3,12 @@ import logo from '../assets/logo.png'
 import { FaDownload, FaGooglePlus, FaHome, FaProjectDiagram, FaRProject, FaUserAlt } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { MdContactEmergency } from 'react-icons/md';
+import resume from '../assets/Sheauly.pdf'
 
 
 const Nabver = () => {
     const navItems = <>
-        
+
         <li><a to="/home"><FaHome />Home</a></li>
         <li><a to="/contact"><MdContactEmergency />Contact</a></li>
         <li><a to="/skill"><FaRProject />Skill</a></li>
@@ -34,9 +35,9 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary"><FaDownload />Download Resume </a>
+                <a href={resume} download className="btn btn-primary"><FaDownload />Download Resume </a>
             </div>
-      </div>
+        </div>
     );
 };
 

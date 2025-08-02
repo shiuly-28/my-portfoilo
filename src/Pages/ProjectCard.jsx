@@ -13,7 +13,7 @@ const ProjectCards = () => {
         },
         {
             title: 'Roommate Finder',
-            image: 'https://i.ibb.co/PnC81d4/images-3.jpg',
+            image: 'https://i.ibb.co/93Ht4V4h/banner-3-P-AICWdo.jpg',
             link: 'https://roommate-finder-project.web.app/',
             code: 'https://github.com/sheauly',
             LiveDemo: 'https://assignment-9-c71f8.web.app/',
@@ -24,7 +24,7 @@ const ProjectCards = () => {
             image: 'https://i.ibb.co/yBXm4RcD/Dps-Jaipur.jpg',
             link: 'https://assignment-9-c71f8.web.app/',
             code: 'https://github.com/sheauly',
-            LiveDemo:'https://assignment-9-c71f8.web.app/',
+            LiveDemo: 'https://assignment-9-c71f8.web.app/',
             description: 'Manage and book events with an interactive UI and protected routes.',
         },
     ];
@@ -34,7 +34,7 @@ const ProjectCards = () => {
             {projects.map((project, index) => (
                 <div
                     key={index}
-                    className="rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300"
+                    className="rounded-xl overflow-hidden shadow-lg group hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300"
                 >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <img

@@ -42,7 +42,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="px-4 py-12 md:px-10 max-w-6xl mx-auto">
+        <div className="px-4 py-12 md:px-10  max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-white mb-10">Contact Me</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -55,7 +55,7 @@ const Contact = () => {
                 >
                     <h3 className="text-xl font-semibold text-primary">My Information</h3>
                     <div className="space-y-3 text-sm text-gray-300">
-                        <p className="flex items-center gap-3"><FaPhoneAlt /> +8801518471238</p>
+                        <p className="flex items-center gap-3"><FaPhoneAlt /> +8801757321528</p>
                         <p className="flex items-center gap-3"><FaEnvelope /> shulybd1245@gmail.com</p>
                         <p className="flex items-center gap-3"><FaMapMarkerAlt /> Kishoreganj, Bangladesh</p>
                     </div>

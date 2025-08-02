@@ -5,30 +5,34 @@ import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Background from "./Pages/Background";
 import Footer from "./Pages/Footer";
-import ProjectCard from "./assets/ProjectCard";
+
 import Contact from "./Pages/Contact";
+import ProjectCards from "./Pages/ProjectCard";
+import SmoothFollower from "./Pages/SmoothFollower";
+
 
 function App() {
-  
+
 
   return (
     <>
-    
+
       <div className='w-11/12 mx-w-xl mx-auto'>
+
+        <SmoothFollower></SmoothFollower>
         <Background></Background>
-          <Nabver></Nabver>
-       
+        <Nabver></Nabver>
+
         <Banner></Banner>
-        
-          <AboutUs></AboutUs>
-          <Skills></Skills>
+
+        <AboutUs></AboutUs>
+        <Skills></Skills>
         <Education></Education>
-        <ProjectCard></ProjectCard>
+        <ProjectCards></ProjectCards>
         <Contact></Contact>
-        <Footer></Footer>
-        
       </div>
-     
+      <Footer></Footer>
+
     </>
   )
 }

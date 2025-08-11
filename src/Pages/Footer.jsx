@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo1.png'; // তোমার logo1.png এর path অনুযায়ী ঠিক করো
+import logo from '../assets/logo1.png';
 
 const Footer = () => {
     return (
@@ -8,9 +8,9 @@ const Footer = () => {
 
                 {/* Logo Section */}
                 <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-4">
-                        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full shadow-md" />
-                        <h2 className="text-2xl font-bold">Sheauly Akhter</h2>
+                    <div className="flex items-center text-center  gap-3">
+                        <img src={logo} alt="Logo" className="h-12 w-12  rounded-full shadow-md" />
+
                     </div>
                     <p className="text-gray-400 text-sm">
                         Passionate MERN Stack Developer crafting modern & responsive web apps.

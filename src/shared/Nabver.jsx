@@ -1,19 +1,77 @@
 import React from 'react';
 import logo from '../assets/logo.png'
-import { FaDownload, FaGooglePlus, FaHome, FaProjectDiagram, FaRProject, FaUserAlt } from 'react-icons/fa';
+import { FaHome, FaUser, FaLaptopCode, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { MdContactEmergency } from 'react-icons/md';
 import resume from '../assets/Sheauly.pdf'
+import { NavLink } from 'react-router';
+
+
 
 
 const Nabver = () => {
     const navItems = <>
+        <NavLink
+            to="/"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaHome /> Home <span className="ml-2"></span>
+        </NavLink>
 
-        <li><a to="/home"><FaHome />Home</a></li>
-        <li><a to="/contact"><MdContactEmergency />Contact</a></li>
-        <li><a to="/skill"><FaRProject />Skill</a></li>
-        <li><a to="/project"><FaUserAlt />Project</a></li>
+        <NavLink
+            to="aboutUs"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaUser />About Us <span className="ml-2"></span>
+        </NavLink>
+
+        <NavLink
+            to="skills"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaLaptopCode />My Skills <span className="ml-2 gap-2"></span>
+        </NavLink>
+
+        <NavLink
+            to="education"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaGraduationCap />Education <span className="ml-2"></span>
+        </NavLink>
+
+        <NavLink
+            to="project"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaProjectDiagram />Project <span className="ml-2"></span>
+        </NavLink>
+
+        <NavLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="flex items-center cursor-pointer gap-2"
+        >
+            <FaEnvelope /> Contact <span className="m-2 "></span>
+        </NavLink>
     </>
+
     return (
         <div className="navbar rounded-2xl mt-4 text-white">
             <div className="navbar-start">
@@ -35,7 +93,7 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download className="btn btn-primary"><FaDownload />Download Resume </a>
+                <a href={resume} download className="btn btn-secondary text-black italic font-semibold"><FaDownload />Download Resume </a>
             </div>
         </div>
     );

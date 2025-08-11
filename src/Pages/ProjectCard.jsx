@@ -1,68 +1,58 @@
-import React from 'react';
-import { FaGithub, FaPaperclip } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-router";
+
+const projects = [
+    {
+        id: 1,
+        title: "Management Restaurant",
+        image: "https://i.ibb.co.com/N2yKb69m/Black-Orange-Special-Menu-Restaurant-Banner.png",
+        shortDesc: "A full-stack restaurant management app."
+    },
+    {
+        id: 2,
+        title: "Roommate Finder",
+        image: "https://i.ibb.co.com/vvLydmHj/banner-3-P-AICWdo.jpg",
+        shortDesc: "React, Node.js, MongoDB, Firebase, Tailwind CSS, daisyUi"
+    },
+    {
+        id: 3,
+        title: "Pet Adoption",
+        image: "https://i.ibb.co.com/4wMf0qPV/Screenshot-11.png",
+        shortDesc: "Adopt pets easily from verified owners."
+    },
+    {
+        id: 4,
+        title: "Event Manager",
+        image: "https://i.ibb.co/7VbtJj3/event.jpg",
+        shortDesc: "Plan and manage events with ease."
+    }
+];
 
 const ProjectCards = () => {
-    const projects = [
-        {
-            title: 'Management Restaurant',
-            image: 'https://i.ibb.co/twdM8Jv1/fresh-fruity-dessert-wooden-table-generated-by-ai-188544-19761.jpg',
-            link: 'https://assignment-11-resturent.web.app/',
-            code: 'https://github.com/sheauly/assignment-10-client',
-            LiveDemo: 'https://assignment-9-c71f8.web.app/',
-            description: 'A full-stack restaurant management app with food listing, ordering, and admin dashboard.',
-        },
-        {
-            title: 'Roommate Finder',
-            image: 'https://i.ibb.co/93Ht4V4h/banner-3-P-AICWdo.jpg',
-            link: 'https://roommate-finder-project.web.app/',
-            code: 'https://github.com/sheauly',
-            LiveDemo: 'https://assignment-9-c71f8.web.app/',
-            description: 'Find and connect with compatible roommates. Includes post listings and like system.',
-        },
-        {
-            title: 'Event Management',
-            image: 'https://i.ibb.co/yBXm4RcD/Dps-Jaipur.jpg',
-            link: 'https://assignment-9-c71f8.web.app/',
-            code: 'https://github.com/sheauly',
-            LiveDemo: 'https://assignment-9-c71f8.web.app/',
-            description: 'Manage and book events with an interactive UI and protected routes.',
-        },
-    ];
-
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-10 max-w-6xl mx-auto">
-            {projects.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-w-4xl mx-auto  gap-6 p-6">
+            {projects.map((project) => (
                 <div
-                    key={index}
-                    className="rounded-xl overflow-hidden shadow-lg group hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300"
+                    key={project.id}
+                    className="card bg-base-100 shadow-lg hover:shadow-xl transition"
                 >
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <figure>
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                            className="h-80 w-full object-cover"
                         />
-                    </a>
-                    <div className="p-4  space-y-3">
-                        <h3 className="text-white font-bold text-center">{project.title}</h3>
-                        <p className="text-sm text-white text-center">{project.description}</p>
-                        <div className="flex justify-center gap-4 mt-2">
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex gap-2 p-2 px-4 py-1 bg-primary text-white rounded hover:bg-primary-focus transition"
+                    </figure>
+                    <div className="card-body bg-slate-800">
+                        <h2 className="card-title text-white">{project.title}</h2>
+                        <button className="rounded-2xl btn w-80 text-center text-lime-400 bg-slate-700">{project.shortDesc}</button>
+                        <div className="card-actions justify-end">
+                            <Link
+                                to={`/projectCardDetails/${project.id}`}
+                                className="btn btn-primary"
                             >
-                                <FaPaperclip />Live Demo
-                            </a>
-                            <a
-                                href={project.code}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className=" flex  gap-3 p-3 px-4 py-1 bg-secondary text-white rounded hover:bg-secondary-focus transition"
-                            >
-                                <FaGithub />Code
-                            </a>
+                                View Details
+                            </Link>
                         </div>
                     </div>
                 </div>

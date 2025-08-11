@@ -72,7 +72,7 @@ export default function SmoothFollower() {
     return (
         <div className="pointer-events-none fixed inset-0 z-99">
             <div
-                className="absolute rounded-full bg-yellow-300 "
+                className="absolute rounded-full bg-red-600 "
                 style={{
                     width: '20px',
                     height: '20px',
@@ -83,7 +83,7 @@ export default function SmoothFollower() {
             />
 
             <div
-                className="absolute rounded-full border border-yellow-400 "
+                className="absolute rounded-full border border-red-600 "
                 style={{
                     width: isHovering ? '44px' : '28px',
                     height: isHovering ? '44px' : '28px',

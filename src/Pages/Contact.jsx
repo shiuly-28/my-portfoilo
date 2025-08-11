@@ -51,19 +51,18 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4"
+                    className="bg-gray-900 rounded-xl shadow-lg p-6 space-y-4"
                 >
-                    <h3 className="text-xl font-semibold text-primary">My Information</h3>
+                    <h3 className="text-2xl font-bold text-lime-500">My Information</h3>
                     <div className="space-y-3 text-sm text-gray-300">
-                        <p className="flex items-center gap-3"><FaPhoneAlt /> +8801757321528</p>
-                        <p className="flex items-center gap-3"><FaEnvelope /> shulybd1245@gmail.com</p>
-                        <p className="flex items-center gap-3"><FaMapMarkerAlt /> Kishoreganj, Bangladesh</p>
+                        <p className="flex items-center gap-3">WhatsApp: +8801757321528</p>
+                        <p className="flex items-center gap-3">Email: shulybd1245@gmail.com</p>
                     </div>
                     <div className="flex gap-4 justify-center lg:justify-start">
                         <a href="https://github.com/sheauly" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaGithub size={30} /></a>
                         <a href="https://www.facebook.com/sheauly.akhter.7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaFacebook size={30} /></a>
-                        <a href="https://www.linkedin.com/in/sheauly" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaLinkedinIn size={30} /></a>
-                        <a href="https://wa.me/8801518471238" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaWhatsappSquare size={30} /></a>
+                        <a href="https://www.linkedin.com/in/halima-akhter-shiuly/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaLinkedinIn size={30} /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaWhatsappSquare size={30} /></a>
                     </div>
                 </motion.div>
 
@@ -72,9 +71,9 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4"
+                    className="bg-gray-900 rounded-xl shadow-lg p-6 space-y-4"
                 >
-                    <h3 className="text-xl font-semibold text-primary">Send a Message</h3>
+                    <h3 className="text-2xl font-bold text-lime-500">Send a Message</h3>
                     <form onSubmit={handleSend} className="space-y-4">
                         <input
                             type="text"

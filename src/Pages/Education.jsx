@@ -17,10 +17,10 @@ const Education = () => {
                 transition={{ duration: 0.8 }}
                 whileHover={{
                     scale: 1.02,
-                    boxShadow: "", // indigo glow
-                    backgroundColor: active ? "" : "", // indigo-800 or slate-800
+                    boxShadow: "",
+                    backgroundColor: active ? "" : "",
                 }}
-                className={`max-w-4xl mx-auto p-8 rounded-xl transition-all duration-300 shadow-md cursor-pointer ${active ? 'bg-lime-800 text-white' : 'hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300'
+                className={`max-w-4xl mx-auto p-8 rounded-xl transition-all duration-300 shadow-md cursor-pointer ${active ? 'bg-lime-800 text-white' : 'hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300 outline outline-2 outline-lime-500'
                     }`}
             >
                 <h2 className="text-3xl font-bold text-lime-300 mb-6 text-center">

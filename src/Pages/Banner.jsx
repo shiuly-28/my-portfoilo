@@ -1,7 +1,8 @@
 import React from 'react';
 import image from '../assets/sheauly.png';
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
-import { motion } from 'framer-motion';
 import { FaDownload, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import resume from '../assets/Sheauly.pdf'
@@ -37,7 +38,20 @@ const Banner = () => {
 
                     <div className="mt-3">
                         <h1 className="font-bold text-2xl text-lime-500">
-                            I'M A Junior MERN Stack Developer
+
+                            <Typewriter
+                                words={[
+                                    "Junior MERN Stack Developer",
+                                    "Frontend Developer",
+                                    "React Specilist"
+                                ]}
+                                loop={true}
+                                cursor
+                                cursorStyle="|"
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                            />
                         </h1>
                     </div>
 
@@ -68,7 +82,7 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href="https://github.com/sheauly" download className="btn btn-secondary shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black font-semibold italic">Hire Me
+                            <a href="https://github.com/sheauly" download className="btn bg-lime-500 rounded-2xl shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black font-semibold italic">Hire Me
 
                             </a>
                         </motion.div>
@@ -80,7 +94,7 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href={resume} download className="btn bg-amber-300 shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
+                            <a href={resume} download className="btn bg-amber-300 shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
                             </a>
                         </motion.div>
                     </div>

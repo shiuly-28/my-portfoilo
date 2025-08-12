@@ -12,7 +12,7 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="max-w-4xl mx-auto text-center glass p-30 rounded-2xl shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300"
+                className="max-w-4xl mx-auto text-center glass p-30 rounded-2xl shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300 outline outline-2 outline-lime-500"
             >
                 <h2 className="text-4xl font-bold text-lime-400 mb-6">About Me</h2>
                 <p className=" text-lg leading-relaxed text-white">

@@ -22,10 +22,10 @@ const Footer = () => {
                 <div className="flex-1">
                     <h2 className="text-xl font-semibold mb-3">Quick Access</h2>
                     <ul className="space-y-2 text-gray-300 text-sm">
-                        <li><a href="#" className="flex hover:text-white transition gap-2"><FaHome />Home</a></li>
-                        <li><a href="#" className="flex hover:text-white transition gap-2"><FaUser />About</a></li>
-                        <li><a href="#" className="flex hover:text-white transition gap-2"><FaLaptopCode />Skills</a></li>
-                        <li><a href="#" className="flex hover:text-white transition gap-2"><FaEnvelope />Contact</a></li>
+                        <li><a href="/" className="flex hover:text-white transition gap-2"><FaHome />Home</a></li>
+                        <li><a href="aboutUs" className="flex hover:text-white transition gap-2"><FaUser />About</a></li>
+                        <li><a href="skills" className="flex hover:text-white transition gap-2"><FaLaptopCode />Skills</a></li>
+                        <li><a href="contact" className="flex hover:text-white transition gap-2"><FaEnvelope />Contact</a></li>
                     </ul>
                 </div>
 

@@ -35,7 +35,7 @@ const ProjectCards = () => {
             {projects.map((project) => (
                 <div
                     key={project.id}
-                    className="relative bg-base-100 shadow-lg rounded-lg overflow-hidden hover:shadow-[0_0_30px_3px_lime] transition duration-300"
+                    className="relative bg-base-100 shadow-lg rounded-lg overflow-hidden hover:shadow-[0_0_30px_3px_lime] transition duration-300 "
                 >
                     {/* Image */}
                     <img
@@ -47,7 +47,7 @@ const ProjectCards = () => {
                     {/* Button fixed middle of image */}
                     <Link
                         to={`/projectCardDetails/${project.id}`}
-                        className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-lg shadow-md transition gap-2"
+                        className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-lg shadow-md transition gap-1"
                     >
                         View Details<FaArrowRight className="mt-1 " />
                     </Link>

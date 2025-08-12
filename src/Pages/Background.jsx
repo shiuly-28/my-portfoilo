@@ -13,7 +13,7 @@ const generateBits = () =>
         duration: Math.random() * 10 + 5,
     }));
 
-export default function AnimatedBackground() {
+export default function Background() {
     const [bits, setBits] = useState(generateBits);
 
     useEffect(() => {

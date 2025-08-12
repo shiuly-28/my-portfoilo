@@ -1,91 +1,86 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 import { FaHome, FaUser, FaLaptopCode, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
-import { GiSkills } from 'react-icons/gi';
-import { MdContactEmergency } from 'react-icons/md';
-import resume from '../assets/Sheauly.pdf'
-import { NavLink } from 'react-router';
-
-
-
+import resume from '../assets/Sheauly.pdf';
+import { NavLink } from 'react-router-dom';
 
 const Nabver = () => {
     const navItems = <>
         <NavLink
             to="/"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200 
+                 ${isActive ? 'text-lime-500 font-bold' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaHome /> Home <span className="ml-2"></span>
+            <FaHome /> Home
         </NavLink>
 
         <NavLink
-            to="aboutUs"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            to="/aboutUs"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200
+                 ${isActive ? 'text-lime-500 font-bold' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaUser />About Us <span className="ml-2"></span>
+            <FaUser /> About Us
         </NavLink>
 
         <NavLink
-            to="skills"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            to="/skills"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200
+                 ${isActive ? 'text-lime-500 font-bold' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaLaptopCode />My Skills <span className="ml-2 gap-2"></span>
+            <FaLaptopCode /> My Skills
         </NavLink>
 
         <NavLink
-            to="education"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            to="/education"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200
+                 ${isActive ? ' text-lime-500' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaGraduationCap />Education <span className="ml-2"></span>
+            <FaGraduationCap /> Education
         </NavLink>
 
         <NavLink
-            to="project"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            to="/project"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200
+                 ${isActive ? 'text-lime-500 font-bold' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaProjectDiagram />Project <span className="ml-2"></span>
+            <FaProjectDiagram /> Project
         </NavLink>
 
         <NavLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            className="flex items-center cursor-pointer gap-2"
+            to="/contact"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-colors duration-200
+                 ${isActive ? 'text-lime-500 font-bold' : 'text-white hover:text-secondary'}`
+            }
         >
-            <FaEnvelope /> Contact <span className="m-2 "></span>
+            <FaEnvelope /> Contact
         </NavLink>
-    </>
+    </>;
 
     return (
-        <div className="navbar rounded-2xl mt-4 text-white">
+        <div className="navbar w-11/12 mx-auto rounded-2xl mt-4 text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {navItems}
                     </ul>
                 </div>
-                <img className='h-20 ' src={logo} alt="" />
+                <img className='h-20' src={logo} alt="Logo" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -93,7 +88,9 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download className="btn btn-secondary text-black italic font-semibold"><FaDownload />Download Resume </a>
+                <a href={resume} download className="btn bg-amber-300 rounded-2xl text-black italic font-semibold">
+                    <FaDownload /> Download Resume
+                </a>
             </div>
         </div>
     );

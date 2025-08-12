@@ -56,21 +56,27 @@ const ProjectCardDetails = () => {
                 alt={project.title}
                 className="rounded-lg shadow-lg w-full h-80 object-cover mb-6"
             />
-            <h1 className="text-3xl text-white font-bold mb-4">{project.title}</h1>
-            <p className="mb-6 text-white">{project.description}</p>
-            <h2 className="text-lime-500 flex font-semibold italic gap-1"><FaLink className="text-lime-500 mt-1" /> Tan Stack:</h2>
+            <h1 className="text-3xl italic text-white font-bold mb-4">{project.title}</h1>
+            <p className="mb-6 italic text-white">{project.description}</p>
+            <h2 className="text-lime-500  flex font-semibold italic gap-1"><FaLink className="text-lime-500 mt-1" /> Tan Stack:</h2>
 
-            <button className="rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">React, Firebase Authentication, Tailwind CSS, DaisyUI</button>
+            <div className="flex gap-3">
+                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">React</button>
+                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Firebase Authentication,</button>
+                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Tailwind CSS</button>
+                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">DaisyUI</button>
+
+            </div>
             <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"> <FaCheckCircle className="text-lime-500 mt-1" />Challenges:</h1>
-            <p className="text-white p-2">Implementing protected routes, managing install/uninstall state with Firestore, and session-based review system.</p>
+            <p className="text-white italic p-2">Implementing protected routes, managing install/uninstall state with Firestore, and session-based review system.</p>
             <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"><FaLightbulb className="text-lime-500 mt-1" />Future Plan: </h1>
-            <p className="text-white p-2">Add dynamic search and filtering, enhance UI with animations, and integrate real-time notifications using Firebase Cloud Messaging.</p>
+            <p className="text-white italic p-2">Add dynamic search and filtering, enhance UI with animations, and integrate real-time notifications using Firebase Cloud Messaging.</p>
             <div className="flex gap-4 mt-2">
-                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-primary">
+                <a href={project.live} target="_blank" rel="noreferrer" className="btn bg-lime-500 rounded-2xl">
                     <FaExternalLinkAlt /> Veiw More
                 </a>
-                <a href={project.github} target="_blank" rel="noreferrer" className="btn bg-amber-300 btn-outline">
-                    <FaGithub /> Details
+                <a href={project.github} target="_blank" rel="noreferrer" className="btn bg-amber-300 rounded-2xl btn-outline">
+                    <FaGithub />Source Code
                 </a>
 
             </div>

@@ -42,14 +42,18 @@ const Skills = () => {
                 <h2 className="text-3xl font-bold text-center text-white mb-10">
                     🚀 <span className="text-lime-400">My Skills</span>
                 </h2>
+                <div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4  gap-6">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}
                             className={`
                                 bg-slate-800 text-gray-200 p-6 rounded-xl flex flex-col items-center gap-3
-                                cursor-pointer
+                <div className="grid grid-cols-2 md:grid-cols-4 outline outline-2 outline-lime-500 gap-6">
+                                cursor-pointer 
                                hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300
                             `}
                             initial="offscreen"

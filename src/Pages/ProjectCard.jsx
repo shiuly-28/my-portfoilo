@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
 
 const projects = [
@@ -23,37 +24,40 @@ const projects = [
     {
         id: 4,
         title: "Event Manager",
-        image: "https://i.ibb.co/7VbtJj3/event.jpg",
+        image: "https://i.ibb.co.com/SwmVds08/Screenshot-13.png",
         shortDesc: "Plan and manage events with ease."
     }
 ];
 
 const ProjectCards = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-w-4xl mx-auto  gap-6 p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2   w-11/12 mx-auto gap-6 p-15">
             {projects.map((project) => (
                 <div
                     key={project.id}
-                    className="card bg-base-100 shadow-lg hover:shadow-xl transition"
+                    className="relative bg-base-100 shadow-lg rounded-lg overflow-hidden hover:shadow-[0_0_30px_3px_lime] transition duration-300"
                 >
-                    <figure>
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            className="h-80 w-full object-cover"
-                        />
-                    </figure>
-                    <div className="card-body bg-slate-800">
-                        <h2 className="card-title text-white">{project.title}</h2>
-                        <button className="rounded-2xl btn w-80 text-center text-lime-400 bg-slate-700">{project.shortDesc}</button>
-                        <div className="card-actions justify-end">
-                            <Link
-                                to={`/projectCardDetails/${project.id}`}
-                                className="btn btn-primary"
-                            >
-                                View Details
-                            </Link>
-                        </div>
+                    {/* Image */}
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="h-64 w-full object-cover"
+                    />
+
+                    {/* Button fixed middle of image */}
+                    <Link
+                        to={`/projectCardDetails/${project.id}`}
+                        className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-lg shadow-md transition gap-2"
+                    >
+                        View Details<FaArrowRight className="mt-1 " />
+                    </Link>
+
+                    {/* Card body */}
+                    <div className="bg-slate-800 p-4 text-center">
+                        <h2 className="text-lg font-bold text-white mb-2">{project.title}</h2>
+                        <button className="rounded-2xl btn  text-center text-lime-400 bg-slate-700">
+                            {project.shortDesc}
+                        </button>
                     </div>
                 </div>
             ))}

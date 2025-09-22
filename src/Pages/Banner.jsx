@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import { FaDownload, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import resume from '../assets/Sheauly.pdf'
+import resume from '../assets/Shiuly Resume .pdf'
 
 const Banner = () => {
 

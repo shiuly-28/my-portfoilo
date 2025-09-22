@@ -32,9 +32,15 @@ const Banner = () => {
 
                 {/* Text Content Section */}
                 <div className="text-center lg:text-left mt-8 lg:mt-0">
-                    <h1 className="text-3xl sm:text-4xl font-semibold text-white">
-                        Hi, I'm  Sheauly Akhter
-                    </h1>
+                    <motion.h1
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1, transition: { duration: 2 } }}
+                        className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#00CAFF] via-[#FEC5F6] to-[#898AC4] bg-clip-text text-transparent italic"
+                    >
+                        Hi, I'm Halima Akhter Shiuly
+                    </motion.h1>
+
+
 
                     <div className="mt-3">
                         <h1 className="font-bold text-2xl text-lime-500">
@@ -94,7 +100,7 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href={resume} download className="btn bg-amber-300 shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
+                            <a href={resume} download className="btn bg-lime-500 shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
                             </a>
                         </motion.div>
                     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo2.png';
 import { FaHome, FaUser, FaLaptopCode, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
 import resume from '../assets/Shiuly Resume .pdf';
 import { NavLink } from 'react-router-dom';
@@ -88,7 +88,7 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download className="btn bg-amber-300 rounded-2xl text-black italic font-semibold">
+                <a href={resume} download className="btn bg-lime-500 rounded-2xl text-black italic font-semibold">
                     <FaDownload /> Download Resume
                 </a>
             </div>

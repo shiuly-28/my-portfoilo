@@ -88,7 +88,7 @@ const Nabver = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a href={resume} download className="btn bg-lime-500 rounded-2xl text-black italic font-semibold">
+                <a href={resume} download className="btn bg-gradient-to-r from-[#00CAFF] to-[#8a33ff] rounded-2xl text-black italic font-semibold">
                     <FaDownload /> Download Resume
                 </a>
             </div>

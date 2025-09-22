@@ -35,7 +35,7 @@ const Banner = () => {
                     <motion.h1
                         initial={{ scale: 0 }}
                         animate={{ scale: 1, transition: { duration: 2 } }}
-                        className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#00CAFF] via-[#FEC5F6] to-[#898AC4] bg-clip-text text-transparent italic"
+                        className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#00CAFF] via-[#33ff33] to-[#8a33ff] bg-clip-text text-transparent italic"
                     >
                         Hi, I'm Halima Akhter Shiuly
                     </motion.h1>
@@ -88,7 +88,7 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href="https://github.com/sheauly" download className="btn bg-lime-500 rounded-2xl shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black font-semibold italic">Hire Me
+                            <a href="https://github.com/shiuly-28" download className="btn bg-gradient-to-r from-[#00CAFF] to-[#8a33ff] rounded-2xl shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black font-semibold italic">Hire Me
 
                             </a>
                         </motion.div>
@@ -100,7 +100,7 @@ const Banner = () => {
                             transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <a href={resume} download className="btn bg-lime-500 shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
+                            <a href={resume} download className="btn bg-gradient-to-r from-[#00CAFF] to-[#8a33ff] shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
                             </a>
                         </motion.div>
                     </div>

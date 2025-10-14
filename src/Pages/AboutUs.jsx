@@ -14,7 +14,7 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 className="max-w-4xl mx-auto text-center glass p-30 rounded-2xl shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300 outline outline-2 outline-lime-500"
             >
-                <h2 className="text-4xl font-bold bg-gradient-to-r from-[#00CAFF] via-[#33ff33] to-[#8a33ff]mb-6">About Me</h2>
+                <h2 className="text-4xl font-bold text-white">About Me</h2>
                 <p className=" text-lg leading-relaxed text-white">
                     Hello! I'm <span className="font-semibold text-accent">Sheauly Akhter</span>, a passionate and aspiring <strong>Frontend Developer</strong> from Bangladesh. I love turning ideas into real-world, interactive web applications using modern technologies like <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I'm also a proud member of the <strong>Programming Hero Community</strong>, where I continuously sharpen my skills and help others grow.
                 </p>

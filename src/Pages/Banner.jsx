@@ -35,7 +35,7 @@ const Banner = () => {
                     <motion.h1
                         initial={{ scale: 0 }}
                         animate={{ scale: 1, transition: { duration: 2 } }}
-                        className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#00CAFF] via-[#33ff33] to-[#8a33ff] bg-clip-text text-transparent italic"
+                        className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-[#00CAFF]  to-[#8a33ff] bg-clip-text text-transparent italic"
                     >
                         Hi, I'm Halima Akhter Shiuly
                     </motion.h1>

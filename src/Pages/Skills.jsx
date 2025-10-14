@@ -8,12 +8,15 @@ import {
     FaDatabase,
     FaFireAlt,
     FaGithub,
+    FaGitAlt,
+    FaFigma,
 } from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { IoLogoCss3 } from "react-icons/io";
 
 const skills = [
+    {name: "Figma", icon: <FaFigma className="text-[#F24E1E] text-5xl" />},
     { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-5xl" /> },
     { name: "CSS", icon: <IoLogoCss3 className="text-yellow-400 text-5xl" /> },
     { name: " Tailwind", icon: <SiTailwindcss className="text-sky-400 text-5xl" /> },
@@ -23,7 +26,8 @@ const skills = [
     { name: "Express.js", icon: <SiExpress className="text-white text-5xl" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-500 text-5xl" /> },
     { name: "Firebase", icon: <FaFireAlt className="text-yellow-500 text-5xl" /> },
-    { name: "Firebase", icon: <FaGithub className="text-5xl" /> },
+    { name: "Github", icon: <FaGithub className="text-5xl" /> },
+    { name: "Git", icon: <FaGitAlt className="text-5xl text-orange-500" /> },
 ];
 
 const Skills = () => {

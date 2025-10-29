@@ -11,7 +11,7 @@ const projects = [
         image: "https://i.ibb.co.com/N2yKb69m/Black-Orange-Special-Menu-Restaurant-Banner.png",
         description: "Full-stack restaurant management system with menu, order, and admin panel.",
         github: "https://github.com/sheauly/assignment-11--client",
-        live: "https://assignment-11-resturent.web.app/"
+        live: "https://management-restaurant-nine.vercel.app/"
     },
     {
         id: 2,

@@ -7,7 +7,7 @@ const projects = [
     {
         id: 1,
         title: "Management Restaurant",
-        image: "https://i.ibb.co.com/N2yKb69m/Black-Orange-Special-Menu-Restaurant-Banner.png",
+        image: "https://i.postimg.cc/Sx9dXS2b/Screenshot-17.png",
         shortDesc: "A full-stack restaurant management app."
     },
     {

@@ -27,7 +27,7 @@ const projects = [
         image: "https://i.ibb.co.com/4wMf0qPV/Screenshot-11.png",
         description: "A pet adoption platform with booking and verification features.",
         github: "https://github.com/sheauly/assignment-12-client-adoption",
-        live: "https://assignment-12-client-79f74.web.app/"
+        live: "https://pet-adoption-pink.vercel.app/"
     },
     {
         id: 4,

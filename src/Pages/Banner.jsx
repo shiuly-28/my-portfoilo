@@ -68,7 +68,7 @@ const Banner = () => {
 
                     {/* Social Icons */}
                     <div className="flex gap-4 justify-center lg:justify-start mb-4">
-                        <a href="https://github.com/sheauly" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                        <a href="https://github.com/shiuly-28" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                             <FaGithub size={30} />
                         </a>
                         <a href="https://www.facebook.com/sheauly.akhter.7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">

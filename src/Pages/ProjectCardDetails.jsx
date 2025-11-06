@@ -4,9 +4,17 @@ import { FaCheckCircle, FaExternalLinkAlt, FaGithub, FaLightbulb, FaLink } from 
 
 
 const projects = [
-
-    {
-        id: 1,
+     {
+    id: 1,
+    title: "PayMate (Team Project)",
+    image: "https://i.postimg.cc/Z50jnHnp/Screenshot-2025-11-06-174036.png",
+    shortDesc: "A secure digital wallet for sending, receiving, and managing money anytime.",
+    description: "PayMate is a secure and user-friendly digital wallet system where users can create accounts, transfer money, make payments, and view their transaction history in real time. The project includes secure authentication, instant balance updates, and a fully responsive interface for smooth usage across devices.",
+    github: "https://github.com/mithun41/digital-wallet-client",
+    live: "https://digital-wallet-paymate.netlify.app/"
+},
+{
+        id: 2,
         title: "Management Restaurant",
         image: "https://i.ibb.co.com/N2yKb69m/Black-Orange-Special-Menu-Restaurant-Banner.png",
         description: "Full-stack restaurant management system with menu, order, and admin panel.",
@@ -14,7 +22,7 @@ const projects = [
         live: "https://management-restaurant-nine.vercel.app/"
     },
     {
-        id: 2,
+        id: 3,
         title: "Roommate Finder",
         image: "https://i.ibb.co.com/vvLydmHj/banner-3-P-AICWdo.jpg",
         description: "Platform to find compatible roommates with filtering and chat system.",
@@ -22,21 +30,14 @@ const projects = [
         live: "https://roommate-finder-project.web.app/auth/login"
     },
     {
-        id: 3,
+        id: 4,
         title: "Pet Adoption",
         image: "https://i.ibb.co.com/4wMf0qPV/Screenshot-11.png",
         description: "A pet adoption platform with booking and verification features.",
         github: "https://github.com/sheauly/assignment-12-client-adoption",
         live: "https://pet-adoption-pink.vercel.app/"
     },
-    {
-        id: 4,
-        title: "Event Manager",
-        image: "https://i.ibb.co.com/SwmVds08/Screenshot-13.png",
-        description: "Manage events, bookings, and ticket sales easily.",
-        github: "https://github.com/programming-hero-web-course1/b11a9-react-authentication-sheauly",
-        live: "https://assignment-9-c71f8.web.app/"
-    }
+   
 ];
 
 

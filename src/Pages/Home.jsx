@@ -9,7 +9,6 @@ import Contact from './Contact';
 const Home = () => {
     return (
         <div>
-
             <Banner></Banner>
             <AboutUs></AboutUs>
             <Skills></Skills>
@@ -21,3 +20,4 @@ const Home = () => {
 };
 
 export default Home;
+

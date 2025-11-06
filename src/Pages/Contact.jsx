@@ -98,7 +98,7 @@ const Contact = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="btn btn-primary w-full"
+                            className="bg-green-500 p-5 rounded text-white font-semibold w-full"
                         >
                             Send Message
                         </button>

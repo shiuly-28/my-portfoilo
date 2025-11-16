@@ -51,16 +51,15 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="bg-gray-900 rounded-xl shadow-lg p-6 space-y-4"
+                    className="rounded-xl shadow-lg p-6 space-y-4 bg-gray-500 input-bordered w-full rounded-xl p-5 hover:shadow-[0_0_30px_3px_lime] transition duration-300"
                 >
                     <h3 className="text-2xl font-bold text-lime-500">My Information</h3>
                     <div className="space-y-3 text-sm text-gray-300">
-                        <p className="flex items-center gap-3">WhatsApp: +8801757321528</p>
-                        <p className="flex items-center gap-3">Email: shulybd1245@gmail.com</p>
+                        <p className="flex items-center gap-3 bg-gray-800 text-white input-bordered w-full rounded-xl p-5">WhatsApp: +8801757321528</p>
+                        <p className="flex items-center gap-3 bg-gray-800 text-white input-bordered w-full rounded-xl p-5">Email: shulybd1245@gmail.com</p>
                     </div>
-                    <div className="flex gap-4 justify-center lg:justify-start">
-                        <a href="https://github.com/sheauly" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaGithub size={30} /></a>
-                        <a href="https://www.facebook.com/sheauly.akhter.7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaFacebook size={30} /></a>
+                    <div className="flex gap-4 justify-center lg:justify-start bg-gray-800 text-white input-bordered w-full rounded-xl p-6">
+                        <a href="https://github.com/shiuly-28" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaGithub size={30} /></a>
                         <a href="https://www.linkedin.com/in/halima-akhter-shiuly/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaLinkedinIn size={30} /></a>
                         <a href="" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><FaWhatsappSquare size={30} /></a>
                     </div>
@@ -71,7 +70,7 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="bg-gray-900 rounded-xl shadow-lg p-6 space-y-4"
+                    className="rounded-xl shadow-lg p-6 space-y-4 bg-gray-500 input-bordered w-full rounded-xl p-5 hover:shadow-[0_0_30px_3px_lime] transition duration-300"
                 >
                     <h3 className="text-2xl font-bold text-lime-500">Send a Message</h3>
                     <form onSubmit={handleSend} className="space-y-4">

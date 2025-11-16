@@ -3,9 +3,9 @@ import image from '../assets/sheauly.png';
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
-import { FaDownload, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {  FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import resume from '../assets/Shiuly Resume .pdf'
+
 
 const Banner = () => {
 
@@ -71,39 +71,13 @@ const Banner = () => {
                         <a href="https://github.com/shiuly-28" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                             <FaGithub size={30} />
                         </a>
-                        <a href="https://www.facebook.com/sheauly.akhter.7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                            <FaFacebook size={30} />
-                        </a>
+                       
                         <a href="https://www.linkedin.com/in/halima-akhter-shiuly/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                             <FaLinkedinIn size={30} />
                         </a>
                     </div>
 
-                    {/* Buttons */}
-                    <div className="flex gap-4 justify-center lg:justify-start">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <a href="https://github.com/shiuly-28" download className="btn bg-gradient-to-r from-[#00CAFF] to-[#8a33ff] rounded-2xl shadow-md  active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black font-semibold italic">Hire Me
-
-                            </a>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.1 }}
-                            transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <a href={resume} download className="btn bg-gradient-to-r from-[#00CAFF] to-[#8a33ff] shadow-md rounded-2xl active:scale-60 transform hover:scale-[1.04] cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_10px_3px_lime] transition duration-300 text-black italic font-semibold"><FaDownload />Download Resume
-                            </a>
-                        </motion.div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

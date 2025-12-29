@@ -54,7 +54,7 @@ const ProjectCards = () => {
                 Here are some of my recent works that showcase my skills and expertise.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-11/12 max-w-7xl mx-auto gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto gap-4 sm:gap-6">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.id}

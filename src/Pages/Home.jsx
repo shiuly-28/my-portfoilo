@@ -1,10 +1,11 @@
 import React from 'react';
-import Banner from './banner';
+
 import AboutUs from './AboutUs';
 import Skills from './Skills';
 import Education from './Education';
 import ProjectCards from './ProjectCard';
 import Contact from './Contact';
+import Banner from './Banner';
 
 const Home = () => {
     return (

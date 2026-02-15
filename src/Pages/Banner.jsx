@@ -1,8 +1,10 @@
-import React from 'react';
-import image from '../assets/sheauly.png';
+
+import image from '../assets/shiuly.png';
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';
+import React, { lazy, Suspense } from "react";
+
 
 const Banner = () => {
     return (
@@ -62,10 +64,15 @@ const Banner = () => {
                                    className="p-3 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-lime-500 hover:border-lime-500 transition-all">
                                     <FaGithub size={24} />
                                 </a>
-                                <a href="https://www.linkedin.com/in/halima-akhter-shiuly/" target="_blank" rel="noopener noreferrer" 
-                                   className="p-3 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-lime-500 hover:border-lime-500 transition-all">
-                                    <FaLinkedinIn size={24} />
+                               <Suspense fallback={null}>
+                                 <a href="https://www.linkedin.com/in/halima-akhter-shiuly/"target="_blank"
+                                     rel="noopener noreferrer"
+                                className="p-3 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-lime-500 hover:border-lime-500 transition-all"
+                                >
+                                <FaLinkedinIn size={24} />
                                 </a>
+                                </Suspense>
+
                             </div>
                         </div>
                     </motion.div>

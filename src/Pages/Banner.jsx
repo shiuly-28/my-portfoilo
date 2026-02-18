@@ -22,7 +22,7 @@ const Banner = () => {
                             Available for Work
                         </h3>
                         
-                        <h1 className="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
+                        <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
                             Hi, I'm <br />
                             <span className="bg-gradient-to-r from-lime-400 to-emerald-500 bg-clip-text text-transparent">
                                 Halima Akhter Shiuly
@@ -86,8 +86,8 @@ const Banner = () => {
                     className="relative flex-1 flex justify-center lg:justify-end"
                 >
                     {/* Animated Background Circles */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-lime-500/20 rounded-full blur-[100px] animate-pulse"></div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px]"></div>
+                    {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-lime-500/20 rounded-full blur-[100px] animate-pulse"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px]"></div> */}
 
                     <div className="relative group">
                         {/* Glass Border Frame */}

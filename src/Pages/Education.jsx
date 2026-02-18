@@ -42,7 +42,7 @@ const Education = () => {
                     viewport={{ once: true }}
                     className="text-center mb-20"
                 >
-                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
                         Academic <span className="text-lime-400 italic font-serif">Journey</span>
                     </h3>
                     <div className="flex items-center justify-center gap-2">
@@ -75,15 +75,15 @@ const Education = () => {
                                     <motion.div 
                                         animate={{ scale: [1, 1.1, 1] }}
                                         transition={{ repeat: Infinity, duration: 2 }}
-                                        className="absolute -top-2 -right-2 bg-lime-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter"
+                                        className="absolute -top-2 -right-2 bg-lime-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter"
                                     >
                                         Active
                                     </motion.div>
                                 </div>
                                 
                                 <h3 className="text-3xl font-bold text-white mb-2">Master's Degree</h3>
-                                <div className="inline-flex items-center gap-2 text-lime-400 font-mono text-xs tracking-widest uppercase py-2 rounded-full">
-                                    <span className="w-2 h-2 bg-lime-500 rounded-full animate-pulse"></span>
+                                <div className="inline-flex items-center gap-2 text-lime-300 font-mono text-xs tracking-widest uppercase py-2 rounded-full">
+                                    <span className="w-2 h-2 bg-lime-400 rounded-full animate-pulse"></span>
                                     Graduated
                                 </div>
                             </div>
@@ -91,9 +91,9 @@ const Education = () => {
                             {/* Right Side: content */}
                             <div className="md:col-span-8 space-y-8">
                                 <div>
-                                    <h4 className="text-4xl font-bold text-white mb-2">Social Work</h4>
+                                    <h4 className="text-3xl font-bold text-white mb-2">Social Work</h4>
                                     <p className="text-xl text-gray-400 font-medium">
-                                        Gurudayal Government College, <span className="text-lime-400">Kishoregonj</span>
+                                        Gurudayal Government College, <span className="text-lime-300">Kishoregonj</span>
                                     </p>
                                 </div>
 

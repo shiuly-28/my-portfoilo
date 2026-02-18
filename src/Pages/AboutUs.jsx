@@ -73,11 +73,11 @@ const AboutUs = () => {
 
                     <div className="flex flex-wrap gap-4 md:gap-8 mt-10 md:mt-14 pt-8 md:pt-10 border-t border-white/5">
                         <div className="bg-white/[0.03] border border-white/5 px-6 py-4 md:px-10 md:py-6 rounded-2xl md:rounded-3xl backdrop-blur-md">
-                            <h4 className="text-3xl md:text-5xl font-bold text-white tracking-tighter">50+</h4>
+                            <h4 className="text-2xl md:text-3xl font-bold text-white tracking-tighter">50+</h4>
                             <p className="text-[10px] text-gray-500 uppercase tracking-widest mt-1 md:mt-2 font-black">Projects Built</p>
                         </div>
                         <div className="bg-white/[0.03] border border-white/5 px-6 py-4 md:px-10 md:py-6 rounded-2xl md:rounded-3xl backdrop-blur-md">
-                            <h4 className="text-3xl md:text-5xl font-bold text-lime-400 tracking-tighter italic">Always</h4>
+                            <h4 className="text-2xl md:text-3xl font-bold text-lime-400 tracking-tighter italic">Always</h4>
                             <p className="text-[10px] text-gray-500 uppercase tracking-widest mt-1 md:mt-2 font-black">Learning</p>
                         </div>
                     </div>

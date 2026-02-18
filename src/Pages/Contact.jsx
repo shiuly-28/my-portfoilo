@@ -54,8 +54,8 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tighter">
-                        Get In <span className="text-lime-400 italic">Touch</span>
+                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tighter">
+                        Get In <span className="text-lime-300 italic">Touch</span>
                     </h2>
                     <div className="h-1.5 w-20 bg-lime-500 mx-auto rounded-full shadow-[0_0_15px_rgba(163,230,53,0.5)]"></div>
                 </motion.div>

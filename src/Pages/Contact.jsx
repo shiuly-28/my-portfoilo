@@ -1,11 +1,11 @@
-import React, { useRef } from 'react'; // useRef যোগ করা হয়েছে
+import React, { useRef } from 'react'; 
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaWhatsappSquare, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const formRef = useRef(); // ফর্ম রেফারেন্স ব্যবহারের জন্য
+    const formRef = useRef(); 
 
     const handleSend = (e) => {
         e.preventDefault();
@@ -13,9 +13,9 @@ const Contact = () => {
         emailjs.sendForm(
             import.meta.env.VITE_service_id,
             import.meta.env.VITE_template_id,
-            formRef.current, // e.target এর বদলে ref ব্যবহার করা নিরাপদ
+            formRef.current, 
             {
-                publicKey: import.meta.env.VITE_public_id, // নতুন ভার্সনে এভাবে দিতে হয়
+                publicKey: import.meta.env.VITE_public_id, 
             }
         )
         .then(() => {
@@ -32,7 +32,7 @@ const Contact = () => {
             e.target.reset();
         })
         .catch((err) => {
-            console.error('EmailJS Error:', err); // এরর চেক করার জন্য
+            console.error('EmailJS Error:', err); 
             Swal.fire({
                 icon: 'error',
                 title: 'Failed to send',
@@ -135,7 +135,7 @@ const Contact = () => {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 type="submit"
-                                // এখানে bg-lime-600 যোগ করা হয়েছে
+                                
                                 className="w-full py-5 rounded-2xl bg-lime-600 text-white font-black uppercase tracking-widest text-sm shadow-[0_20px_40px_-10px_rgba(163,230,53,0.3)] hover:bg-lime-500 transition-all"
                             >
                                 Send Message —&gt;

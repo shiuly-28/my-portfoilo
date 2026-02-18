@@ -52,10 +52,10 @@ const AboutUs = () => {
                             </svg>
                         </div>
 
-                        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 md:mb-8 tracking-tighter leading-tight">
+                        <h2 className="text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-6 md:mb-8 tracking-tighter leading-tight">
                             Crafting Digital <br />
                             <span className="text-white/20 group-hover:text-white/40 transition-colors duration-700">Interacti</span>
-                            <span className="text-lime-400 italic">øns</span>
+                            <span className="text-lime-300 italic">øns</span>
                         </h2>
                         
                         <div className="h-1 w-20 md:h-1.5 md:w-24 bg-gradient-to-r from-lime-500 to-transparent mb-6 md:mb-10 rounded-full"></div>

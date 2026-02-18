@@ -1,99 +1,123 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// --- BACKGROUND ANIMATION: Floating color blobs ---
+// --- BACKGROUND ANIMATION ---
 const BackgroundAnimation = () => {
     return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-            {/* Blue Glow */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
             <motion.div 
                 animate={{ 
                     scale: [1, 1.2, 1], 
-                    x: [0, 80, 0], 
-                    y: [0, 50, 0],
+                    rotate: [0, 45, 0],
+                    opacity: [0.3, 0.5, 0.3]
                 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-[-5%] left-[-5%] w-[450px] h-[450px] bg-blue-600/10 rounded-full blur-[100px]"
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px]"
             />
-            
-            {/* Lime Glow */}
             <motion.div 
                 animate={{ 
-                    scale: [1, 1.3, 1], 
-                    x: [0, -100, 0], 
-                    y: [0, 80, 0] 
+                    scale: [1, 1.5, 1], 
+                    x: [0, -50, 0],
+                    opacity: [0.2, 0.4, 0.2]
                 }}
-                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[-10%] right-[-5%] w-[400px] h-[400px] bg-lime-500/10 rounded-full blur-[110px]"
+                transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-24 -right-24 w-[500px] h-[500px] bg-lime-500/10 rounded-full blur-[130px]"
             />
         </div>
     );
 };
 
-// --- MAIN EDUCATION COMPONENT ---
 const Education = () => {
+    const skills = ['Empathy', 'Problem Solving', 'Human Behavior', 'UX Research'];
+
     return (
-        <section id="education" className="relative py-24 px-6 overflow-hidden">
-            
-            {/* Call to Background Animation */}
+        <section id="education" className="relative py-28 px-6 bg-[#030712] overflow-hidden">
             <BackgroundAnimation />
 
             <div className="max-w-5xl mx-auto relative z-10">
                 {/* Header Section */}
                 <motion.div 
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tighter">
-                        Academic <span className="text-lime-400 italic">Journey</span>
-                    </h2>
-                    <div className="h-1.5 w-20 bg-lime-500 mx-auto rounded-full shadow-[0_0_15px_rgba(163,230,53,0.5)]"></div>
+                    <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                        Academic <span className="text-lime-400 italic font-serif">Journey</span>
+                    </h3>
+                    <div className="flex items-center justify-center gap-2">
+                        <div className="h-[2px] w-12 bg-lime-500/50"></div>
+                        <div className="w-3 h-3 rotate-45 border-2 border-lime-500"></div>
+                        <div className="h-[2px] w-12 bg-lime-500/50"></div>
+                    </div>
                 </motion.div>
 
-                {/* Glassy Card */}
+                {/* Main Card */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8 }}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className="relative p-8 md:p-14 rounded-[3.5rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl shadow-2xl overflow-hidden group"
+                    className="relative group"
                 >
-                    <div className="grid md:grid-cols-12 gap-10 items-center relative z-10">
-                        {/* Left Info: Icon & Degree */}
-                        <div className="md:col-span-4 flex flex-col items-center text-center border-b md:border-b-0 md:border-r border-white/10 pb-8 md:pb-0 md:pr-8">
-                             <div className="w-20 h-20 bg-lime-500/10 rounded-3xl flex items-center justify-center mb-4 border border-lime-500/20 group-hover:scale-110 transition-transform duration-500 shadow-inner">
-                                <span className="text-4xl text-white">🎓</span>
-                            </div>
-                            <h3 className="text-2xl font-bold text-white tracking-tight">Master's Degree</h3>
-                            <p className="text-lime-400 font-mono text-[10px] mt-2 tracking-[0.2em] uppercase bg-lime-500/10 px-4 py-1.5 rounded-full border border-lime-500/20">
-                                Completed
-                            </p>
-                        </div>
-
-                        {/* Right Details: College & Bio */}
-                        <div className="md:col-span-8 space-y-6">
-                            <div>
-                                <h4 className="text-3xl font-bold text-white tracking-tight">Social Work</h4>
-                                <p className="text-xl text-lime-400/80 mt-1 font-medium italic">Gurudayal Government College</p>
-                            </div>
-                            <div className="space-y-4">
-                                <p className="text-gray-400 text-lg leading-relaxed font-light">
-                                    My background in Social Work provides a unique perspective on <span className="text-white font-medium italic underline decoration-lime-500/30 underline-offset-4">User Experience</span>. I don't just write code; I design solutions by understanding human needs through empathy and behavioral logic.
-                                </p>
-                                <p className="text-gray-400 text-lg leading-relaxed font-light">
-                                    Based in <span className="text-white font-medium">Kishoregonj, Dhaka</span>, I am dedicated to bridging the gap between social sciences and modern technology to build applications that are both functional and meaningful.
-                                </p>
-                            </div>
+                    {/* Glowing Border Effect on Hover */}
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-lime-500/20 to-blue-500/20 rounded-[3.5rem] blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div className="relative p-8 md:p-16 rounded-[3.5rem] border border-white/10 bg-black/40 backdrop-blur-2xl overflow-hidden">
+                        <div className="grid md:grid-cols-12 gap-12 items-start">
                             
-                            {/* Tags */}
-                            <div className="flex flex-wrap gap-3 pt-4">
-                                {['Empathy', 'Problem Solving', 'Human Behavior', 'UX Research'].map((skill) => (
-                                    <span key={skill} className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[10px] text-gray-400 uppercase font-bold tracking-widest hover:border-lime-500/50 hover:text-white transition-all cursor-default">
-                                        {skill}
-                                    </span>
-                                ))}
+                            {/* Left Side: Status & Icon */}
+                            <div className="md:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
+                                <div className="relative mb-6">
+                                    <div className="w-24 h-24 bg-gradient-to-br from-lime-400/20 to-lime-600/5 rounded-3xl flex items-center justify-center border border-lime-500/30 group-hover:rotate-6 transition-transform duration-500">
+                                        <span className="text-5xl">🎓</span>
+                                    </div>
+                                    <motion.div 
+                                        animate={{ scale: [1, 1.1, 1] }}
+                                        transition={{ repeat: Infinity, duration: 2 }}
+                                        className="absolute -top-2 -right-2 bg-lime-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter"
+                                    >
+                                        Active
+                                    </motion.div>
+                                </div>
+                                
+                                <h3 className="text-3xl font-bold text-white mb-2">Master's Degree</h3>
+                                <div className="inline-flex items-center gap-2 text-lime-400 font-mono text-xs tracking-widest uppercase py-2 rounded-full">
+                                    <span className="w-2 h-2 bg-lime-500 rounded-full animate-pulse"></span>
+                                    Graduated
+                                </div>
+                            </div>
+
+                            {/* Right Side: content */}
+                            <div className="md:col-span-8 space-y-8">
+                                <div>
+                                    <h4 className="text-4xl font-bold text-white mb-2">Social Work</h4>
+                                    <p className="text-xl text-gray-400 font-medium">
+                                        Gurudayal Government College, <span className="text-lime-400">Kishoregonj</span>
+                                    </p>
+                                </div>
+
+                                <div className="space-y-6">
+                                    <p className="text-gray-300 text-lg leading-relaxed font-light">
+                                        My background in <span className="text-white font-semibold">Social Work</span> provides a unique perspective on <span className="underline decoration-lime-500 underline-offset-8">User Experience</span>. I don't just write code; I design solutions by understanding human needs through empathy and behavioral logic.
+                                    </p>
+                                    <p className="text-gray-400 text-lg leading-relaxed font-light">
+                                        Bridging the gap between social sciences and modern technology to build applications that are both functional and meaningful.
+                                    </p>
+                                </div>
+
+                                {/* Tags with Motion */}
+                                <div className="flex flex-wrap gap-3 pt-6">
+                                    {skills.map((skill) => (
+                                        <motion.span 
+                                            key={skill}
+                                            whileHover={{ y: -3, backgroundColor: "rgba(163, 230, 53, 0.1)" }}
+                                            className="px-5 py-2 rounded-xl bg-white/5 border border-white/10 text-xs text-gray-300 uppercase font-bold tracking-widest transition-colors hover:text-lime-400 hover:border-lime-500/50 cursor-default"
+                                        >
+                                            {skill}
+                                        </motion.span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

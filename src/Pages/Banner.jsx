@@ -1,5 +1,5 @@
 
-import image from '../assets/shiuly.png';
+import image from '../assets/sheauly.png';
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';

@@ -81,7 +81,7 @@ const Education = () => {
                                     </motion.div>
                                 </div>
                                 
-                                <h3 className="text-3xl font-bold text-white mb-2">Master's Degree</h3>
+                                <h4 className="text-3xl font-bold text-white mb-2">Master's Degree</h4>
                                 <div className="inline-flex items-center gap-2 text-lime-300 font-mono text-xs tracking-widest uppercase py-2 rounded-full">
                                     <span className="w-2 h-2 bg-lime-400 rounded-full animate-pulse"></span>
                                     Graduated

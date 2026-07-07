@@ -31,7 +31,7 @@ const Education = () => {
     const skills = ['Empathy', 'Problem Solving', 'Human Behavior', 'UX Research'];
 
     return (
-        <section id="education" className="relative py-28 px-6 bg-[#030712] overflow-hidden">
+        <section id="education" className="relative py-28 px-6  overflow-hidden">
             <BackgroundAnimation />
 
             <div className="max-w-5xl mx-auto relative z-10">
@@ -77,7 +77,7 @@ const Education = () => {
                                         transition={{ repeat: Infinity, duration: 2 }}
                                         className="absolute -top-2 -right-2 bg-lime-400 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter"
                                     >
-                                        Active
+                                        Completed
                                     </motion.div>
                                 </div>
                                 

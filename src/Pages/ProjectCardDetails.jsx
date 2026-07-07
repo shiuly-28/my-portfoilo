@@ -14,21 +14,21 @@ const projects = [
     live: "https://digital-wallet-paymate.netlify.app/"
 },
 {
-        id: 2,
-        title: "Management Restaurant",
-        image: "https://i.ibb.co.com/N2yKb69m/Black-Orange-Special-Menu-Restaurant-Banner.png",
-        description: "Full-stack restaurant management system with menu, order, and admin panel.",
-        github: "https://github.com/sheauly/assignment-11--client",
-        live: "https://management-restaurant-nine.vercel.app/"
-    },
+    id: 2,
+    title: "SwiftPick",
+    image: "https://i.postimg.cc/g24JFwy5/Screenshot-2026-07-07-161545.png",
+    description: "Full-stack grocery delivery app with real-time tracking, Socket.io live location, Stripe payment, and role-based dashboard for user, admin & delivery boy.",
+    github: "https://github.com/shiuly-28/swiftcart",
+    live: "https://swiftcart-nine-eta.vercel.app/"
+},
     {
-        id: 3,
-        title: "Roommate Finder",
-        image: "https://i.ibb.co.com/vvLydmHj/banner-3-P-AICWdo.jpg",
-        description: "Platform to find compatible roommates with filtering and chat system.",
-        github: " https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-sheauly",
-        live: "https://roommate-finder-project.web.app/auth/login"
-    },
+    id: 3,
+    title: "WriteFlow Ai",
+    image: "https://i.postimg.cc/bYFp73ND/Screenshot-2026-07-07-211658.png",
+    description: "An advanced AI-powered content generation platform featuring dynamic templates, smart prompt engineering, and an intuitive user dashboard.",
+    github: "https://github.com/shiuly-28/writeflow-ai",
+    live: "https://writeflow-ai-sand.vercel.app/"
+},
     {
         id: 4,
         title: "Pet Adoption",
@@ -40,7 +40,6 @@ const projects = [
    
 ];
 
-
 const ProjectCardDetails = () => {
     const { id } = useParams();
     const project = projects.find((p) => p.id === parseInt(id));
@@ -50,8 +49,8 @@ const ProjectCardDetails = () => {
     }
 
 
-    return (
-        <div className="max-w-7xl mx-auto  p-6 shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300">
+return (
+        <div className="max-w-7xl mx-auto mt-8  p-6 shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300">
             <img
                 src={project.image}
                 alt={project.title}
@@ -61,13 +60,15 @@ const ProjectCardDetails = () => {
             <p className="mb-6 italic text-white">{project.description}</p>
             <h2 className="text-lime-500  flex font-semibold italic gap-1"><FaLink className="text-lime-500 mt-1" /> Tan Stack:</h2>
 
-            <div className="flex gap-3">
-                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">React</button>
-                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Firebase Authentication,</button>
-                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Tailwind CSS</button>
-                <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">DaisyUI</button>
-
-            </div>
+            <div className="flex flex-wrap gap-3">
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Next.js</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">TypeScript</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">MongoDB</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Socket.io</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Stripe</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Redux</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Tailwind CSS</button>
+    </div>
             <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"> <FaCheckCircle className="text-lime-500 mt-1" />Challenges:</h1>
             <p className="text-white italic p-2">Implementing protected routes, managing install/uninstall state with Firestore, and session-based review system.</p>
             <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"><FaLightbulb className="text-lime-500 mt-1" />Future Plan: </h1>

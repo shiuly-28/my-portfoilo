@@ -11,20 +11,20 @@ const projects = [
         shortDesc: "Plan and manage events with ease.",
         skills: ["React.js", "Node.js", "MongoDB", "JWT", "Firebase", "Tailwind CSS"]
     },
-    {
-        id: 2,
-        title: "Management Restaurant",
-        image: "https://i.postimg.cc/Sx9dXS2b/Screenshot-17.png",
-        shortDesc: "A full-stack restaurant management app.",
-        skills: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Firebase", "Stripe"]
+   {
+    id: 2,
+    title: "SwiftPick",
+    image: "https://i.postimg.cc/g24JFwy5/Screenshot-2026-07-07-161545.png",
+    shortDesc: "A full-stack grocery delivery app with real-time tracking.",
+    skills: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Socket.io", "Stripe", "Redux", "Tailwind CSS"]
     },
-    {
-        id: 3,
-        title: "Roommate Finder",
-        image: "https://i.ibb.co.com/vvLydmHj/banner-3-P-AICWdo.jpg",
-        shortDesc: "Find perfect roommates with ease.",
-        skills: ["React.js", "Node.js", "MongoDB", "Firebase", "Tailwind CSS", "JWT"]
-    },
+   {
+    id: 3,
+    title: "WriteFlow Ai",
+    image: "https://i.postimg.cc/d1TZY89b/Screenshot-2026-07-07-165602.png",
+    shortDesc: "Create high-quality content instantly with AI power.",
+    skills: ["Next.js", "React.js", "Node.js", "MongoDB", "Tailwind CSS", "Gemini API"]
+},
     {
         id: 4,
         title: "Pet Adoption",
@@ -92,8 +92,8 @@ const ProjectCards = () => {
                                     <span
                                         key={idx}
                                         className="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-medium rounded-full 
-                                                   bg-gradient-to-r from-purple-600 to-purple-800 text-white 
-                                                   border border-purple-400 shadow-sm"
+                                                   bg-gradient-to-r from-lime-400 to-emerald-500 hover:from-lime-500 hover:to-emerald-600 text-white 
+                                                   border border-lime-500 shadow-sm"
                                     >
                                         {skill}
                                     </span>
@@ -105,13 +105,12 @@ const ProjectCards = () => {
                                 <Link
                                     to={`/projectCardDetails/${project.id}`}
                                     className="flex items-center justify-center gap-1 sm:gap-2
-                                               bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
-                                               hover:from-pink-600 hover:via-purple-600 hover:to-blue-600 
+                                               bg-gradient-to-r from-lime-400 to-emerald-500 hover:from-lime-500 hover:to-emerald-600
                                                text-white px-6 sm:px-8 py-2 sm:py-2.5
                                                rounded-full shadow-[0_0_20px_rgba(236,72,153,0.5)] 
                                                hover:shadow-[0_0_30px_rgba(236,72,153,0.8)] 
                                                transition-all duration-300 font-bold text-xs sm:text-sm
-                                               border-2 border-white/30
+                                                 border border-lime-500
                                                hover:scale-105 transform"
                                 >
                                     See Details <FaArrowRight className="animate-pulse" />

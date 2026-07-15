@@ -64,7 +64,6 @@ const AboutUs = () => {
                 {/* --- Right Column: Tech Grid & CTA --- */}
                 <div className="lg:col-span-5 flex flex-col gap-4">
                     
-                    {/* Added TypeScript and updated layout grid */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-4">
                         {[
                             { title: "JavaScript", label: "Logic Building", icon: "JS", text: "text-yellow-400" },

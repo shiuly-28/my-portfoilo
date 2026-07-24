@@ -10,7 +10,7 @@ const Nabver = () => {
             to="/"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaHome /> Home
@@ -20,7 +20,7 @@ const Nabver = () => {
             to="/aboutUs"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaUser /> About
@@ -30,7 +30,7 @@ const Nabver = () => {
             to="/skills"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaLaptopCode /> Skills
@@ -40,7 +40,7 @@ const Nabver = () => {
             to="/education"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaGraduationCap /> Education
@@ -50,7 +50,7 @@ const Nabver = () => {
             to="/project"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaProjectDiagram /> Project
@@ -60,7 +60,7 @@ const Nabver = () => {
             to="/contact"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
-                 ${isActive ? 'text-lime-500 font-bold bg-white/5' : 'text-white hover:text-lime-400 hover:bg-white/5'}`
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
             }
         >
             <FaEnvelope /> Contact
@@ -96,7 +96,7 @@ const Nabver = () => {
                     <a 
                         href={resume} 
                         download 
-                        className="btn border-none bg-gradient-to-r from-lime-400 to-emerald-500 hover:from-lime-500 hover:to-emerald-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-4 sm:px-6 transition-all shadow-lg shadow-lime-500/20"
+                        className="btn border-none bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-4 sm:px-6 transition-all shadow-lg shadow-teal-500/20"
                     >
                         <FaDownload className="hidden sm:inline mr-2" /> 
                         <span>Resume</span>

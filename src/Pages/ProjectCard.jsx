@@ -48,7 +48,7 @@ const ProjectCards = () => {
     return (
         <div className="py-6 sm:py-10 px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-3 sm:mb-5">
-                🚀 <span className="text-lime-400">My Projects</span>
+                🚀 <span className="text-teal-400">My Projects</span>
             </h2>
             <p className="text-center text-gray-300 mb-6 sm:mb-10 px-4 text-sm sm:text-base">
                 Here are some of my recent works that showcase my skills and expertise.
@@ -58,7 +58,7 @@ const ProjectCards = () => {
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.id}
-                        className="relative bg-base-100 shadow-lg rounded-lg overflow-hidden hover:shadow-[0_0_30px_3px_lime] transition duration-300"
+                        className="relative bg-base-100 shadow-lg rounded-lg overflow-hidden hover:shadow-[0_0_30px_3px_teal] transition duration-300"
                         variants={cardVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -92,8 +92,8 @@ const ProjectCards = () => {
                                     <span
                                         key={idx}
                                         className="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-medium rounded-full 
-                                                   bg-gradient-to-r from-lime-400 to-emerald-500 hover:from-lime-500 hover:to-emerald-600 text-white 
-                                                   border border-lime-500 shadow-sm"
+                                                   bg-gradient-to-r  to-cyan-400 hover:from-teal-500 hover:to-cyan-500 text-white 
+                                                   border border-teal-500 shadow-sm"
                                     >
                                         {skill}
                                     </span>
@@ -105,12 +105,12 @@ const ProjectCards = () => {
                                 <Link
                                     to={`/projectCardDetails/${project.id}`}
                                     className="flex items-center justify-center gap-1 sm:gap-2
-                                               bg-gradient-to-r from-lime-400 to-emerald-500 hover:from-lime-500 hover:to-emerald-600
+                                               bg-gradient-to-r  to-cyan-400 hover:from-teal-500 hover:to-cyan-500
                                                text-white px-6 sm:px-8 py-2 sm:py-2.5
                                                rounded-full shadow-[0_0_20px_rgba(236,72,153,0.5)] 
                                                hover:shadow-[0_0_30px_rgba(236,72,153,0.8)] 
                                                transition-all duration-300 font-bold text-xs sm:text-sm
-                                                 border border-lime-500
+                                                 border border-teal-500
                                                hover:scale-105 transform"
                                 >
                                     See Details <FaArrowRight className="animate-pulse" />

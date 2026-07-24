@@ -50,7 +50,7 @@ const ProjectCardDetails = () => {
 
 
 return (
-        <div className="max-w-7xl mx-auto mt-8  p-6 shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_lime] transition duration-300">
+        <div className="max-w-7xl mx-auto mt-8  p-6 shadow-lg hover:bg-primary/10 hover:shadow-[0_0_30px_3px_teal] transition duration-300">
             <img
                 src={project.image}
                 alt={project.title}
@@ -58,23 +58,23 @@ return (
             />
             <h1 className="text-3xl italic text-white font-bold mb-4">{project.title}</h1>
             <p className="mb-6 italic text-white">{project.description}</p>
-            <h2 className="text-lime-500  flex font-semibold italic gap-1"><FaLink className="text-lime-500 mt-1" /> Tan Stack:</h2>
+            <h2 className="text-teal-500  flex font-semibold italic gap-1"><FaLink className="text-teal-500 mt-1" /> Tan Stack:</h2>
 
             <div className="flex flex-wrap gap-3">
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Next.js</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">TypeScript</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">MongoDB</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Socket.io</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Stripe</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Redux</button>
-    <button className="italic rounded-2xl bg-slate-700 p-2 text-lime-500 mt-3">Tailwind CSS</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">Next.js</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">TypeScript</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">MongoDB</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">Socket.io</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">Stripe</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">Redux</button>
+    <button className="italic rounded-2xl bg-slate-700 p-2 text-teal-500 mt-3">Tailwind CSS</button>
     </div>
-            <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"> <FaCheckCircle className="text-lime-500 mt-1" />Challenges:</h1>
+            <h1 className="flex italic font-bold p-2 text-teal-500 gap-1"> <FaCheckCircle className="text-teal-500 mt-1" />Challenges:</h1>
             <p className="text-white italic p-2">Implementing protected routes, managing install/uninstall state with Firestore, and session-based review system.</p>
-            <h1 className="flex italic font-bold p-2 text-lime-500 gap-1"><FaLightbulb className="text-lime-500 mt-1" />Future Plan: </h1>
+            <h1 className="flex italic font-bold p-2 text-teal-500 gap-1"><FaLightbulb className="text-teal-500 mt-1" />Future Plan: </h1>
             <p className="text-white italic p-2">Add dynamic search and filtering, enhance UI with animations, and integrate real-time notifications using Firebase Cloud Messaging.</p>
             <div className="flex gap-4 mt-2">
-                <a href={project.live} target="_blank" rel="noreferrer" className="btn bg-lime-500 rounded-2xl">
+                <a href={project.live} target="_blank" rel="noreferrer" className="btn bg-teal-500 rounded-2xl">
                     <FaExternalLinkAlt /> Veiw More
                 </a>
                 <a href={project.github} target="_blank" rel="noreferrer" className="btn bg-amber-300 rounded-2xl btn-outline">

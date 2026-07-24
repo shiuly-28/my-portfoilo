@@ -38,7 +38,7 @@ const Skills = () => {
         <section id="skills" className="py-16 px-4  text-white overflow-hidden">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-center text-white mb-10">
-                    🚀 <span className="text-lime-400">My Skills</span>
+                    🚀 <span className="text-teal-400">My Skills</span>
                 </h2>
 
                 {/* ১ম লাইন */}
@@ -51,7 +51,7 @@ const Skills = () => {
                     {skills.slice(0, Math.ceil(skills.length / 2)).map((skill, index) => (
                         <div
                             key={index}
-                            className="bg-slate-800 text-gray-200 px-6 py-4 rounded-xl flex flex-col items-center gap-2 cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300 min-w-[150px]"
+                            className="bg-slate-800 text-gray-200 px-6 py-4 rounded-xl flex flex-col items-center gap-2 cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_15px_3px_teal] transition duration-300 min-w-[150px]"
                         >
                             <div>{skill.icon}</div>
                             <p className="text-base font-semibold text-center">{skill.name}</p>
@@ -69,7 +69,7 @@ const Skills = () => {
                     {skills.slice(Math.ceil(skills.length / 2)).map((skill, index) => (
                         <div
                             key={index}
-                            className="bg-slate-800 text-gray-200 px-6 py-4 rounded-xl flex flex-col items-center gap-2 cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_15px_3px_lime] transition duration-300 min-w-[150px]"
+                            className="bg-slate-800 text-gray-200 px-6 py-4 rounded-xl flex flex-col items-center gap-2 cursor-pointer hover:bg-primary/10 hover:shadow-[0_0_15px_3px_teal] transition duration-300 min-w-[150px]"
                         >
                             <div>{skill.icon}</div>
                             <p className="text-base font-semibold text-center">{skill.name}</p>

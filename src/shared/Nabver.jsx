@@ -99,9 +99,9 @@ const Nabver = () => {
                     rel="noopener noreferrer"
                     className="btn border-none bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-2 sm:px-4  transition-all shadow-lg shadow-teal-500/20"
                     >
-    <FaDownload className="hidden sm:inline mr-2" />
-    <span>Resume</span>
-</a>
+             <FaDownload className="hidden sm:inline mr-2" />
+            <span>Resume</span>
+            </a>
                 </div>
             </div>
         </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo2.png';
 import { FaHome, FaUser, FaLaptopCode, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
-import resume from '../assets/Shiuly_Fronted_Resume.pdf';
+import resume from '../assets/Shiuly_Fronted_Resume (7) (1).pdf';
 import { NavLink } from 'react-router-dom';
 
 const Nabver = () => {
@@ -93,14 +93,15 @@ const Nabver = () => {
                 </div>
                 
                 <div className="navbar-end">
-                    <a 
-                        href={resume} 
-                        download 
-                        className="btn border-none bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-4 sm:px-6 transition-all shadow-lg shadow-teal-500/20"
+                  <a
+                    href={resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn border-none bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-2 sm:px-4  transition-all shadow-lg shadow-teal-500/20"
                     >
-                        <FaDownload className="hidden sm:inline mr-2" /> 
-                        <span>Resume</span>
-                    </a>
+    <FaDownload className="hidden sm:inline mr-2" />
+    <span>Resume</span>
+</a>
                 </div>
             </div>
         </nav>

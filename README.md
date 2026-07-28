@@ -1,12 +1,87 @@
-# React + Vite
+# 🌐 Shiuly Akhter | Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website. This portfolio showcases my skills, projects, education, and contact information as a Frontend Developer.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://my-portfolio-b66ac.web.app/
 
-## Expanding the ESLint configuration
+## 💻 GitHub Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://github.com/shiuly-28/my-portfoilo
+
+## 🚀 Features
+
+- Modern and responsive design
+- Smooth scrolling navigation
+- About Me section
+- Technical Skills
+- Education
+- Featured Projects
+- Resume Preview
+- Contact Form
+- Mobile Friendly
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- Tailwind CSS
+- DaisyUI
+- React Router
+- React Icons
+
+### Animation
+
+- Framer Motion
+- AOS
+
+### Backend & Services
+
+- Firebase Hosting
+
+### Tools
+
+- Git
+- GitHub
+- Vite
+- VS Code
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/shiuly-28/my-portfoilo.git
+```
+
+Go to the project folder
+
+```bash
+cd my-portfoilo
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+## 📬 Contact
+
+**Shiuly Akhter**
+
+📧 Email: shulybd1245@gmail.com
+
+💼 LinkedIn: *(Add your LinkedIn URL here)*
+
+🌐 Portfolio: https://my-portfolio-b66ac.web.app/
+
+## ⭐ Thank you for visiting my portfolio!

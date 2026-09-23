@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo2.png';
 import { FaHome, FaUser, FaLaptopCode, FaGraduationCap, FaProjectDiagram, FaEnvelope, FaDownload } from 'react-icons/fa';
-import resume from '../assets/Shiuly_Fronted_Resume (7) (1).pdf';
+import resume from '../assets/Shiuly_Frontend_resume (2).pdf';
 import { NavLink } from 'react-router-dom';
 
 const Nabver = () => {

@@ -18,20 +18,21 @@ const projects = [
     shortDesc: "A full-stack grocery delivery app with real-time tracking.",
     skills: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Socket.io", "Stripe", "Redux", "Tailwind CSS"]
     },
-   {
+    {
     id: 3,
+    title: "CartFusion",
+    image: "https://i.postimg.cc/j5Sskk8G/Screenshot-2026-09-23-100245.png",
+    shortDesc: "A full-stack e-commerce platform with buyer, merchant, and admin roles.",
+    skills: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS", "Stripe", "NextAuth"]
+},
+   {
+    id: 4,
     title: "WriteFlow Ai",
     image: "https://i.postimg.cc/d1TZY89b/Screenshot-2026-07-07-165602.png",
     shortDesc: "Create high-quality content instantly with AI power.",
     skills: ["Next.js", "React.js", "Node.js", "MongoDB", "Tailwind CSS", "Gemini API"]
 },
-    {
-        id: 4,
-        title: "Pet Adoption",
-        image: "https://i.ibb.co.com/4wMf0qPV/Screenshot-11.png",
-        shortDesc: "Adopt pets easily from verified owners.",
-        skills: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe"]
-    },
+   
     
 ];
 

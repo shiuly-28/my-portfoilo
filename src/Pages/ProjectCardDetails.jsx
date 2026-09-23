@@ -21,22 +21,23 @@ const projects = [
     github: "https://github.com/shiuly-28/swiftcart",
     live: "https://swiftcart-nine-eta.vercel.app/"
 },
+ {
+        id: 3,
+        title: "CartFusion",
+        image: "https://i.postimg.cc/j5Sskk8G/Screenshot-2026-09-23-100245.png",
+        description: "A full-stack e-commerce platform with buyer, merchant, and admin roles, featuring cart, checkout, order tracking, and AI-assisted support.",
+        github: "https://github.com/shiuly-28/CartFusion",
+        live: "https://cart-fusion.vercel.app/"
+    },
+   
     {
-    id: 3,
+    id: 4,
     title: "WriteFlow Ai",
     image: "https://i.postimg.cc/bYFp73ND/Screenshot-2026-07-07-211658.png",
     description: "An advanced AI-powered content generation platform featuring dynamic templates, smart prompt engineering, and an intuitive user dashboard.",
     github: "https://github.com/shiuly-28/writeflow-ai",
     live: "https://writeflow-ai-sand.vercel.app/"
 },
-    {
-        id: 4,
-        title: "Pet Adoption",
-        image: "https://i.ibb.co.com/4wMf0qPV/Screenshot-11.png",
-        description: "A pet adoption platform with booking and verification features.",
-        github: "https://github.com/sheauly/assignment-12-client-adoption",
-        live: "https://pet-adoption-pink.vercel.app/"
-    },
    
 ];
 

@@ -55,6 +55,15 @@ const Nabver = () => {
         >
             <FaProjectDiagram /> Project
         </NavLink>
+        <NavLink
+            to="/works"
+            className={({ isActive }) =>
+                `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
+                 ${isActive ? 'text-teal-500 font-bold bg-white/5' : 'text-white hover:text-teal-400 hover:bg-white/5'}`
+            }
+        >
+            <FaProjectDiagram /> Works
+        </NavLink>
 
         <NavLink
             to="/contact"

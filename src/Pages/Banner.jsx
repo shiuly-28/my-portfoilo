@@ -1,14 +1,13 @@
-
 import image from '../assets/shiuly1.png';
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';
-import React, { lazy, Suspense } from "react";
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import React, { Suspense } from "react";
 
 
 const Banner = () => {
     return (
-        <div className="min-h-[90vh] flex items-center justify-center py-12 px-4  overflow-hidden">
+        <div className="relative min-h-[90vh] flex items-center justify-center py-12 px-4  overflow-hidden">
             <div className="flex flex-col-reverse lg:flex-row items-center gap-12 max-w-7xl mx-auto">
                 
                 {/* Text Content Section */}
@@ -113,9 +112,29 @@ const Banner = () => {
                     </div>
                 </motion.div>
             </div>
+
+            {/* Scroll-down indicator */}
+            <motion.a
+                href="#about"
+                aria-label="Scroll to About section"
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 hover:text-teal-400 transition-colors"
+            >
+                <span className="text-[10px] uppercase tracking-widest font-mono">Scroll</span>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                >
+                    <path d="M12 5v14M5 12l7 7 7-7" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+            </motion.a>
         </div>
     );
 };
 
 export default Banner;
-

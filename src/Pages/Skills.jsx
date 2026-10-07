@@ -21,7 +21,7 @@ import { RiNextjsFill } from "react-icons/ri";
 const technicalSkills = [
     { name: "React.js", percent: 90 },
     { name: "Next.js", percent: 85 },
-    { name: "JavaScript", percent: 92 },
+    { name: "JavaScript", percent: 80 },
     { name: "Node.js", percent: 85 },
     { name: "MongoDB", percent: 80 },
 ];

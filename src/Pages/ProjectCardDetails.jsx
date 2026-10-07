@@ -24,7 +24,7 @@ const projects = [
  {
         id: 3,
         title: "CartFusion",
-        image: "https://i.postimg.cc/j5Sskk8G/Screenshot-2026-09-23-100245.png",
+        image: "https://i.postimg.cc/gkXv1PpP/Screenshot-2026-10-07-233925.png",
         description: "A full-stack e-commerce platform with buyer, merchant, and admin roles, featuring cart, checkout, order tracking, and AI-assisted support.",
         github: "https://github.com/shiuly-28/CartFusion",
         live: "https://cart-fusion.vercel.app/"

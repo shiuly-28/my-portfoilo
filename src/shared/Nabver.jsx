@@ -55,7 +55,7 @@ const Nabver = () => {
         >
             <FaProjectDiagram /> Project
         </NavLink>
-        <NavLink
+        {/* <NavLink
             to="/works"
             className={({ isActive }) =>
                 `flex italic items-center cursor-pointer gap-2 px-3 py-2 transition-all duration-300 rounded-lg
@@ -63,7 +63,7 @@ const Nabver = () => {
             }
         >
             <FaProjectDiagram /> Works
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
             to="/contact"

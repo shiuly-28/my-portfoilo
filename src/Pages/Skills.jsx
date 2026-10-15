@@ -15,6 +15,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { IoLogoCss3 } from "react-icons/io";
 import { BiLogoTypescript, BiLogoVisualStudio } from "react-icons/bi";
 import { RiNextjsFill } from "react-icons/ri";
+import { CanvasLogoBurst } from "./CanvasLogoBurst";
 
 // ---------- Data ----------
 
@@ -44,7 +45,7 @@ const skillGroups = [
             { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
             { name: "Next.js", icon: <RiNextjsFill className="text-white" /> },
             { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
-            { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
+           
         ],
     },
     {
@@ -78,7 +79,7 @@ function SkillBar({ name, percent }) {
                 <span>{name}</span>
                 <span className="text-teal-400">{percent}%</span>
             </div>
-            <div className="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
+            <div className="h-2 w-full rounded-full bg-slate-800/80 backdrop-blur-sm overflow-hidden">
                 <motion.div
                     className="h-full rounded-full bg-gradient-to-r from-teal-400 to-cyan-400"
                     initial={{ width: 0 }}
@@ -142,8 +143,15 @@ function SkillRing({ name, percent }) {
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-16 px-4 text-white">
-            <div className="max-w-6xl mx-auto">
+        <section id="skills" className="relative py-16 px-4 text-white overflow-hidden ">
+            
+            {/* Shadcn ছাড়া সরাসরি HTML Canvas দিয়ে তৈরি ব্যাকগ্রাউন্ড */}
+            <div className="absolute inset-0 pointer-events-none opacity-60 z-0">
+                <CanvasLogoBurst />
+            </div>
+
+            {/* Content Container */}
+            <div className="relative z-10 max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">
                     My <span className="text-teal-400">Skills</span>
                 </h2>
@@ -182,7 +190,7 @@ const Skills = () => {
                                 {group.items.map((item) => (
                                     <div
                                         key={item.name}
-                                        className="flex flex-col items-center justify-center gap-2 w-24 h-24 rounded-xl bg-slate-800 hover:bg-slate-700 transition-colors duration-200"
+                                        className="flex flex-col items-center justify-center gap-2 w-24 h-24 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800 hover:bg-slate-800 transition-colors duration-200"
                                     >
                                         <span className="text-2xl">{item.icon}</span>
                                         <span className="text-xs text-gray-300 text-center px-1">

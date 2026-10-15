@@ -106,9 +106,8 @@ const Nabver = () => {
                     href={resume}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn border-none bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 rounded-full text-black italic font-bold text-xs sm:text-sm px-2 sm:px-4  transition-all shadow-lg shadow-teal-500/20"
+                    className="btn border-none bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-400 hover:to-cyan-500 rounded-full text-white italic font-bold text-xs sm:text-sm px-2 sm:px-4  transition-all shadow-lg shadow-teal-500/20"
                     >
-             <FaDownload className="hidden sm:inline mr-2" />
             <span>Resume</span>
             </a>
                 </div>
